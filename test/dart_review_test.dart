@@ -1,4 +1,4 @@
-import 'package:my_dart_review/my_dart_review.dart';
+import 'package:dart_review/dart_review.dart';
 import 'package:test/test.dart';
 
 void main() {
