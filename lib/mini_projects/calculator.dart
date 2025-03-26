@@ -1,7 +1,25 @@
-
+import "dart:io";
 void main() {
 
-  print(add(x: 5, y: 1));
+  print("Choose an operation: \n1. Add \n2. Subtract \n3. Multiply \n4. Divide");
+  int? operation = int.parse(stdin.readLineSync()!);
+
+  print("\nEnter a number");
+  int? x = int.parse(stdin.readLineSync()!);
+
+  print("\nEnter a second number:");
+  int? y = int.parse(stdin.readLineSync()!);
+  print("\n\n");
+
+  if (operation == 1) {
+    print("$x + $y = ${add(x: x, y: y)}");
+  } else if (operation == 2) {
+    print("$x - $y = ${subtract(x: x, y: y)}");
+  } else if (operation == 3) {
+    print("$x * $y = ${multiply(x: x, y: y)}");
+  } else if (operation == 4) {
+    print("$x / $y = ${divide(x: x, y: y)}");
+  }
 
 }
 
