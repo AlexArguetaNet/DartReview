@@ -3,7 +3,7 @@ void main() {
   // Dynamic list
   var scoresList = ["mario", 50, 75, 20, 99];
 
-  // Excpicit list of type List<int>
+  // Explicit list of type List<int>
   List<int> scores = [50, 75, 20, 99];
 
   scores[0] = 25;
